@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ali Torabi - PhD Student in Computer Science specializing in Computer Vision, Deep Learning, and Explainable AI">
+    <meta name="keywords" content="Ali Torabi, Computer Vision, Deep Learning, Vision Transformers, Explainable AI, WSSS, PhD, University of Wyoming">
+    <meta name="author" content="Ali Torabi">
+    <title>Ali Torabi | Computer Vision & Deep Learning Researcher</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">Ali Torabi</div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right">
+                <h1 class="hero-title">Ali Torabi</h1>
+                <p class="hero-subtitle">PhD Student in Computer Science</p>
+                <p class="hero-description">Specializing in Computer Vision, Deep Learning, and Explainable AI</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://github.com/selfishout" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> GitHub Portfolio
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/selfishout" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ali-torabi-37a60864/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="mailto:atorabi@uwyo.edu" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="assets/images/profile.jpg" alt="Ali Torabi">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-up" data-aos-delay="100">
+                    <p>
+                        I am a PhD student in Computer Science at the <strong>University of Wyoming</strong>, working under the supervision of 
+                        <a href="#" target="_blank">Dr. Yaqoob Majeed</a>. My research focuses on developing novel techniques in 
+                        <strong>Explainable AI (XAI)</strong> for Computer Vision, particularly in <strong>Weakly Supervised Semantic Segmentation (WSSS)</strong>.
+                    </p>
+                    <p>
+                        I'm passionate about bridging the gap between theoretical research and practical applications in deep learning. 
+                        My work involves developing influence-guided Class Activation Mapping (CAM) techniques with instance-level refinement 
+                        and GPU-optimized scaling for large-scale datasets such as PASCAL VOC and COCO.
+                    </p>
+                    <p>
+                        With a strong background in software engineering and industrial experience in iOS development with ML integration, 
+                        I bring both academic rigor and practical expertise to my research. I have published in top venues including 
+                        Springer Neural Processing Letters and have papers under review in leading journals.
+                    </p>
+                </div>
+                <div class="about-highlights" data-aos="fade-up" data-aos-delay="200">
+                    <div class="highlight-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>PhD in Computer Science<br>University of Wyoming</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-flask"></i>
+                        <h3>Research Focus</h3>
+                        <p>Explainable AI<br>Computer Vision</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Recognition</h3>
+                        <p>NSF ART Grant<br>Multiple Publications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests Section -->
+    <section id="research" class="section research-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="research-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Weakly Supervised Semantic Segmentation</h3>
+                    <p>Developing novel CAM-based techniques with influence functions for improved segmentation with weak annotations.</p>
+                </div>
+                <div class="research-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="research-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Explainable AI for Computer Vision</h3>
+                    <p>Creating interpretable deep learning models with explanation methods to improve neural network predictions.</p>
+                </div>
+                <div class="research-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="research-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Vision Transformers & Deep Learning</h3>
+                    <p>Exploring transformer architectures for computer vision tasks and multi-modal learning applications.</p>
+                </div>
+                <div class="research-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="research-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>GPU-Accelerated ML</h3>
+                    <p>Optimizing model training with CUDA, mixed-precision training, and multi-GPU parallelism for large-scale datasets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <p class="section-subtitle" data-aos="fade-up">12 Production-Ready Computer Vision & Vision-Language Model Projects</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/google-research/vision_transformer/main/vit_figure.png" alt="Vision Transformer" onerror="this.src='https://production-media.paperswithcode.com/methods/Screen_Shot_2021-01-26_at_9.43.31_PM_uI4jjMq.png'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Vision Transformer Classification</h3>
+                        <p>Complete PyTorch implementation of ViT with attention visualization and transfer learning capabilities.</p>
+                        <div class="project-tags">
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                            <span>ViT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/selfishout/vision-transformer-classification" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/openai/CLIP/main/CLIP.png" alt="CLIP Search" onerror="this.src='https://github.com/openai/CLIP/raw/main/CLIP.png'">
+                    </div>
+                    <div class="project-content">
+                        <h3>CLIP Image Search Engine</h3>
+                        <p>Semantic image search using OpenAI CLIP for natural language queries with FAISS integration.</p>
+                        <div class="project-tags">
+                            <span>CLIP</span>
+                            <span>FAISS</span>
+                            <span>Gradio</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/selfishout/clip-image-search" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://github.com/salesforce/BLIP/raw/main/BLIP.gif" alt="Image Captioning" onerror="this.src='https://production-media.paperswithcode.com/methods/default.gif'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Image Captioning with VLMs</h3>
+                        <p>Automatic caption generation using BLIP, BLIP-2, and GIT vision-language models.</p>
+                        <div class="project-tags">
+                            <span>BLIP</span>
+                            <span>VLM</span>
+                            <span>Hugging Face</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/selfishout/image-captioning-vlm" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/ultralytics/assets/main/yolov8/yolo-comparison-plots.png" alt="YOLO Detection" onerror="this.src='https://user-images.githubusercontent.com/26833433/212094133-6bb8c21c-3cc4-4eeb-9b24-59e11f41528d.png'">
+                    </div>
+                    <div class="project-content">
+                        <h3>YOLO Object Detection</h3>
+                        <p>Real-time object detection with YOLOv8 supporting 80+ classes with video processing.</p>
+                        <div class="project-tags">
+                            <span>YOLOv8</span>
+                            <span>Real-time</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/selfishout/yolo-object-detection" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="https://production-media.paperswithcode.com/methods/segmentation.jpg" alt="Semantic Segmentation" onerror="this.src='https://www.mdpi.com/remotesensing/remotesensing-11-01355/article_deploy/html/images/remotesensing-11-01355-g001.png'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Semantic Segmentation</h3>
+                        <p>Pixel-level classification using DeepLabV3 with 21-class PASCAL VOC segmentation.</p>
+                        <div class="project-tags">
+                            <span>DeepLab</span>
+                            <span>Segmentation</span>
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/selfishout/semantic-segmentation" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="https://production-media.paperswithcode.com/tasks/Visual_Question_Answering_f9d0d5c8.png" alt="Visual QA" onerror="this.src='https://paperswithcode.com/media/tasks/VQA_20.jpg'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Visual Question Answering</h3>
+                        <p>Answer questions about images using BLIP-2 and multi-modal reasoning.</p>
+                        <div class="project-tags">
+                            <span>VQA</span>
+                            <span>BLIP-2</span>
+                            <span>Multi-modal</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/selfishout/visual-question-answering" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="https://github.com/selfishout?tab=repositories" target="_blank" class="btn btn-primary">
+                    View All 12 Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Publications</h2>
+            
+            <div class="publications-list">
+                <!-- Publication 1 -->
+                <div class="publication-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3>Instance-Guided Class Activation Mapping for Weakly Supervised Semantic Segmentation</h3>
+                        <p class="pub-authors"><strong>Ali Torabi</strong>, Yaqoob Majeed, Md. Mahbubur Rahman, Sanjog Gaihre</p>
+                        <p class="pub-venue"><i class="fas fa-file-alt"></i> arXiv:2509.12496, 2025</p>
+                        <div class="pub-links">
+                            <a href="https://arxiv.org/abs/2509.12496" target="_blank">
+                                <i class="fas fa-link"></i> arXiv
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="publication-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3>Integrating deep CNN models for multilingual Sign Language recognition: A SignLink-based approach for Bengali and English</h3>
+                        <p class="pub-authors">Niamul Hassan Samin, Mustahidul Islam Ferdous, Renu Akter Suity, et al.</p>
+                        <p class="pub-venue"><i class="fas fa-file-alt"></i> Research Square (Preprint), July 2025</p>
+                        <div class="pub-links">
+                            <a href="#" target="_blank">
+                                <i class="fas fa-link"></i> Research Square
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 3 -->
+                <div class="publication-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pub-year">2023</div>
+                    <div class="pub-content">
+                        <h3>Using Cartesian Genetic Programming Approach with New Crossover Technique to Design Convolutional Neural Networks</h3>
+                        <p class="pub-authors"><strong>Ali Torabi</strong>, Arash Sharifi, Mohammad Teshnehlab</p>
+                        <p class="pub-venue"><i class="fas fa-book"></i> Springer, Neural Processing Letters, 2023</p>
+                        <div class="pub-links">
+                            <a href="https://link.springer.com/article/" target="_blank">
+                                <i class="fas fa-link"></i> Springer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Under Review Papers -->
+                <div class="publication-item under-review" data-aos="fade-up" data-aos-delay="400">
+                    <div class="pub-year">
+                        <span class="status-badge">Under Review</span>
+                    </div>
+                    <div class="pub-content">
+                        <h3>A New Crossover Technique for Cartesian Genetic Programming based on Population Alignment</h3>
+                        <p class="pub-authors"><strong>Ali Torabi</strong>, Arash Sharifi, Mohammad Teshnehlab</p>
+                        <p class="pub-venue"><i class="fas fa-file-alt"></i> International Journal of Bio-Inspired Computation</p>
+                    </div>
+                </div>
+
+                <div class="publication-item under-review" data-aos="fade-up" data-aos-delay="500">
+                    <div class="pub-year">
+                        <span class="status-badge">Under Review</span>
+                    </div>
+                    <div class="pub-content">
+                        <h3>A Web-Based Framework for Detecting Fake News in Monolingual Texts</h3>
+                        <p class="pub-authors">Md. Abdur Rahman, Md. Hafizur Rahman Sumon, Shanta Islam, et al., <strong>Ali Torabi</strong>, Asif Alif</p>
+                        <p class="pub-venue"><i class="fas fa-file-alt"></i> Online Social Networks and Media</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experience</h2>
+            
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2023 - Present</span>
+                        <h3>PhD Researcher</h3>
+                        <h4>University of Wyoming</h4>
+                        <p>
+                            Conducting research on Explainable AI in Deep Learning and Image Recognition. Developing influence-guided 
+                            CAM techniques for Weakly Supervised Semantic Segmentation with GPU-optimized scaling on PASCAL VOC and COCO datasets.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Summer 2025</span>
+                        <h3>Research Assistant (NSF ART Grant)</h3>
+                        <h4>University of Wyoming</h4>
+                        <p>
+                            Designed and implemented a web-based 3D STL visualization platform with interactive cross-sectioning and 
+                            advanced rendering using Three.js and WebGL for F3DT commercialization project.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Fall 2023 - Present</span>
+                        <h3>Teaching Assistant - Algorithm Design and Analysis</h3>
+                        <h4>University of Wyoming</h4>
+                        <p>
+                            Served as TA for five consecutive semesters, providing mentorship in algorithmic problem solving and complexity analysis.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">April 2020 - 2023</span>
+                        <h3>Senior iOS Developer (Freelancer)</h3>
+                        <h4>Tehran, Iran</h4>
+                        <p>
+                            Developed iOS applications with ML integration. Built Deep CNN models for product image recognition and 
+                            implemented ML functionality across iOS devices including watchOS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up">
+                I'm always open to discussing research opportunities, collaborations, or potential positions in Computer Vision and Deep Learning.
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:atorabi@uwyo.edu">atorabi@uwyo.edu</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+1 (949) 738-3001</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>University of Wyoming<br>Laramie, WY, USA</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/selfishout" target="_blank">@selfishout</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ali Torabi. All rights reserved.</p>
+                <p>PhD Student in Computer Science | University of Wyoming</p>
+                <div class="footer-links">
+                    <a href="https://github.com/selfishout" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ali-torabi-37a60864/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://scholar.google.com" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="mailto:atorabi@uwyo.edu"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
