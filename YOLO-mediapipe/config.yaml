@@ -1,0 +1,32 @@
+paths:
+  model: "models/yolov8n.pt"
+  input: "0"
+  output: "outputs"
+  csv: "outputs/logs/session.csv"
+
+yolo:
+  model: "models/yolov8n.pt"
+  confidence: 0.35
+  iou: 0.45
+  device: "cpu"
+
+mediapipe:
+  max_hands: 1
+  detection_confidence: 0.5
+  tracking_confidence: 0.5
+
+tracking:
+  tracker: "hand_tracker"
+  max_age: 30
+  min_hits: 3
+
+visualization:
+  draw_bbox: true
+  draw_landmarks: true
+  draw_angles: true
+  show_fps: true
+
+output:
+  save_video: false
+  save_csv: true
+  save_images: false

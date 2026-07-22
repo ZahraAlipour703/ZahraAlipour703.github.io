@@ -1,0 +1,11 @@
+ultralytics
+mediapipe
+opencv-python
+opencv-contrib-python
+numpy
+pyyaml
+scipy
+scikit-learn
+albumentations
+segment-anything
+tqdm
