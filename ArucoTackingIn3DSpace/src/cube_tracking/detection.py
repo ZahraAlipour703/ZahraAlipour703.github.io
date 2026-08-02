@@ -21,6 +21,46 @@ class MarkerDetector:
     def __init__(self, dictionary_id: int = cv2.aruco.DICT_6X6_250):
         self.dictionary = cv2.aruco.getPredefinedDictionary(dictionary_id)
         self.params = cv2.aruco.DetectorParameters()
+        # OpenCV >= 4.7 moved detection to the ArucoDetector class; older
+        # versions only have the free-function cv2.aruco.detectMarkers.
+        self._detector = None
+        if hasattr(cv2.aruco, "ArucoDetector"):
+            self._detector = cv2.aruco.ArucoDetector(self.dictionary, self.params)
+
+    def _detect_markers(self, frame: np.ndarray):
+        if self._detector is not None:
+            return self._detector.detectMarkers(frame)
+        return cv2.aruco.detectMarkers(frame, self.dictionary, parameters=self.params)
+
+    def _estimate_pose(
+        self,
+        corner: np.ndarray,
+        camera_matrix: np.ndarray,
+        distortion_coefficients: np.ndarray,
+    ) -> tuple[np.ndarray, np.ndarray]:
+        """
+        Estimate a single marker's pose via solvePnP.
+
+        Replaces cv2.aruco.estimatePoseSingleMarkers, which was removed in
+        OpenCV 5.0 — solvePnP works identically across all OpenCV versions.
+
+        Returns:
+            Tuple of (rvec, tvec), each shape (3,).
+        """
+        half = MARKER_SIZE_M / 2.0
+        object_points = np.array([
+            [-half, half, 0],
+            [half, half, 0],
+            [half, -half, 0],
+            [-half, -half, 0],
+        ], dtype=np.float32)
+
+        ok, rvec, tvec = cv2.solvePnP(
+            object_points, corner[0], camera_matrix, distortion_coefficients
+        )
+        if not ok:
+            raise RuntimeError("solvePnP failed to estimate marker pose")
+        return rvec.flatten(), tvec.flatten()
 
     def detect(
         self,
@@ -42,9 +82,7 @@ class MarkerDetector:
             Dict mapping cube_index -> list of per-marker detections, each a
             dict with 'center_px', 'position' (x_cm, y_cm, raw_z), 'quat', 'face'.
         """
-        corners, ids, _ = cv2.aruco.detectMarkers(
-            frame, self.dictionary, parameters=self.params
-        )
+        corners, ids, _ = self._detect_markers(frame)
         detected = defaultdict(list)
 
         if ids is None:
@@ -55,15 +93,13 @@ class MarkerDetector:
             if cube_idx >= NUM_CUBES:
                 continue
 
-            rvecs, tvecs, _ = cv2.aruco.estimatePoseSingleMarkers(
-                corner, MARKER_SIZE_M, camera_matrix, distortion_coefficients
-            )
+            rvec, tvec = self._estimate_pose(corner, camera_matrix, distortion_coefficients)
             center_px = tuple(map(int, corner[0].mean(axis=0)))
             x_cm = center_px[0] * cm_to_pixel
             y_cm = center_px[1] * cm_to_pixel
-            raw_z = tvecs[0][0][2]
+            raw_z = tvec[2]
 
-            rot_marker = R.from_rotvec(rvecs[0][0]).as_matrix()
+            rot_marker = R.from_rotvec(rvec).as_matrix()
             corrected_mat = FACE_ROTATION_CORRECTIONS[face_lbl].as_matrix() @ rot_marker
             quat = R.from_matrix(corrected_mat).as_quat()
 
