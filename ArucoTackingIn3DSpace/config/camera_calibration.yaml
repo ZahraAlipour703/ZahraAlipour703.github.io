@@ -1,0 +1,20 @@
+# Camera intrinsics and physical-scale calibration.
+# Generate this file for your own camera using tools/calibrate_camera.py
+# rather than editing these example values directly.
+
+camera_matrix:
+  - [472.7667680410852, 0.0, 316.7624590820721]
+  - [0.0, 474.2890590607098, 253.4632105205658]
+  - [0.0, 0.0, 1.0]
+
+distortion_coefficients:
+  - [0.09774012951245542]
+  - [-0.558299844718441]
+  - [0.0]
+  - [0.0]
+  - [0.828881365790557]
+
+# Pixel-to-centimeter conversion factor at the working distance used during
+# calibration. Must be re-measured if the camera, lens, or working distance
+# changes.
+cm_to_pixel: 0.059375  # 38.0 / 640
