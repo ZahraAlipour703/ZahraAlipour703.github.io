@@ -1,875 +1,310 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Zahra Alipour | Biomedical Engineer, Computer Vision Engineer & AI Researcher">
+    <meta name="keywords"
+          content="Zahra Alipour, Computer Vision, Biomedical Engineering, Biomechanics, Human Motion, 3D Vision, Multimodal AI, Robotics">
+    <meta name="author" content="Zahra Alipour">
 
-<meta name="description"
-      content="Zahra Alipour | Biomedical Engineer, Computer Vision Engineer & AI Researcher">
-<meta name="keywords"
-      content="Zahra Alipour, Computer Vision, Biomedical Engineering, Human Motion Analysis, 3D Vision, Multimodal AI, Robotics, Deep Learning">
-<meta name="author" content="Zahra Alipour">
+    <meta property="og:title"
+          content="Zahra Alipour | Computer Vision Engineer & AI Researcher">
+    <meta property="og:description"
+          content="Biomedical Engineer working in human-centered computer vision, 3D perception, multimodal AI, and biomedical applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zahraalipour703.github.io/">
 
-<title>Zahra Alipour | Computer Vision Engineer & AI Researcher</title>
+    <title>Zahra Alipour | Computer Vision Engineer & AI Researcher</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+          rel="stylesheet">
 
-<!-- Font Awesome -->
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- AOS Animation Library -->
-<link rel="stylesheet"
-      href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Small project-specific additions -->
+    <style>
+        .project-placeholder {
+            width: 100%;
+            min-height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            opacity: 0.65;
+        }
+
+        .project-repo-name {
+            display: block;
+            margin-top: 0.35rem;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 0.72rem;
+            opacity: 0.65;
+            overflow-wrap: anywhere;
+        }
+
+        .project-links a,
+        .pub-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .publication-status {
+            margin-top: 0.4rem;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- =========================
-     Navigation
-========================== -->
-<nav class="navbar" id="navbar">
-    <div class="container">
+    <!-- =========================
+         Navigation
+    ========================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
 
-        <div class="nav-brand">Zahra Alipour</div>
-
-        <button class="nav-toggle"
-                id="navToggle"
-                aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#research" class="nav-link">Research</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#publications" class="nav-link">Publications</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-
-    </div>
-</nav>
-
-
-<!-- =========================
-     Hero Section
-========================== -->
-<section id="home" class="hero">
-
-    <div class="hero-content">
-
-        <div class="hero-text" data-aos="fade-right">
-
-            <h1 class="hero-title">Zahra Alipour</h1>
-
-            <p class="hero-subtitle">
-                Computer Vision Engineer & AI Researcher
-            </p>
-
-            <p class="hero-description">
-                Biomedical Engineer working at the intersection of
-                human-centered computer vision, 3D perception,
-                multimodal AI, and intelligent robotic systems.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#contact" class="btn btn-primary">
-                    Get In Touch
-                </a>
-
-                <a href="https://github.com/ZahraAlipour703"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="btn btn-secondary">
-                    <i class="fab fa-github"></i>
-                    GitHub Portfolio
-                </a>
-
+            <div class="nav-brand">
+                Zahra Alipour
             </div>
 
-            <div class="social-links">
+            <button class="nav-toggle"
+                    id="navToggle"
+                    aria-label="Toggle navigation"
+                    aria-controls="navMenu"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-                <a href="https://github.com/ZahraAlipour703"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   title="GitHub"
-                   aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/zahraalipourr"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   title="LinkedIn"
-                   aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:zahraalipour.ac@gmail.com"
-                   title="Email"
-                   aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
-            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
         </div>
-
-        <div class="hero-image" data-aos="fade-left">
-            <img src="assets/images/profile.png"
-                 alt="Portrait of Zahra Alipour">
-        </div>
-
-    </div>
-
-    <div class="scroll-indicator">
-        <a href="#about" aria-label="Scroll to About section">
-            <i class="fas fa-chevron-down"></i>
-        </a>
-    </div>
-
-</section>
+    </nav>
 
 
-<!-- =========================
-     About Section
-========================== -->
-<section id="about" class="section about-section">
+    <!-- =========================
+         Hero Section
+    ========================== -->
+    <section id="home" class="hero">
 
-    <div class="container">
+        <div class="hero-content">
 
-        <h2 class="section-title" data-aos="fade-up">
-            About Me
-        </h2>
+            <div class="hero-text" data-aos="fade-right">
 
-        <div class="about-content">
+                <h1 class="hero-title">
+                    Zahra Alipour
+                </h1>
 
-            <div class="about-text"
-                 data-aos="fade-up"
-                 data-aos-delay="100">
-
-                <p>
-                    I am a <strong>Biomedical Engineer specialized in Biomechanics</strong>
-                    with a research trajectory toward
-                    <strong>Computer Vision, Machine Learning, and intelligent perception</strong>.
-                    My work focuses on developing computational systems that can perceive,
-                    analyze, and understand human movement and real-world environments.
+                <p class="hero-subtitle">
+                    Computer Vision Engineer & AI Researcher
                 </p>
 
-                <p>
-                    My technical experience spans
-                    <strong>human pose estimation, hand tracking, stereo vision,
-                    3D tracking, biosignal processing, medical AI, and robotics</strong>.
-                    I have developed real-time systems using YOLO, MediaPipe, OpenCV,
-                    and modern deep learning architectures, with applications in
-                    rehabilitation, human-robot interaction, and biomedical engineering.
+                <p class="hero-description">
+                    Biomedical Engineer developing intelligent perception systems
+                    for human movement, 3D vision, multimodal AI, and biomedical applications.
                 </p>
 
-                <p>
-                    I am particularly interested in
-                    <strong>multimodal 3D/4D perception, temporal understanding of human movement,
-                    foundation models, vision-language models, and embodied AI</strong>.
-                    My long-term goal is to develop robust, generalizable perception systems
-                    that connect visual understanding with human-centered and biomedical applications.
-                </p>
+                <div class="hero-buttons">
 
-            </div>
+                    <a href="#contact" class="btn btn-primary">
+                        Get In Touch
+                    </a>
 
-
-            <div class="about-highlights"
-                 data-aos="fade-up"
-                 data-aos-delay="200">
-
-                <div class="highlight-card">
-
-                    <i class="fas fa-graduation-cap"></i>
-
-                    <h3>Education</h3>
-
-                    <p>
-                        B.Sc. in Biomedical Engineering<br>
-                        Qazvin Islamic Azad University<br>
-                        CGPA: 3.78 / 4.00
-                    </p>
+                    <a href="https://github.com/ZahraAlipour703"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-secondary">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
 
                 </div>
 
-
-                <div class="highlight-card">
-
-                    <i class="fas fa-flask"></i>
-
-                    <h3>Research Focus</h3>
-
-                    <p>
-                        Computer Vision<br>
-                        Human Motion & 3D Perception<br>
-                        Multimodal AI
-                    </p>
-
-                </div>
-
-
-                <div class="highlight-card">
-
-                    <i class="fas fa-award"></i>
-
-                    <h3>Recognition</h3>
-
-                    <p>
-                        ICRoM 2025 Publication<br>
-                        Top 30 BME Admission Rank, QIAU
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     Research Interests
-========================== -->
-<section id="research" class="section research-section">
-
-    <div class="container">
-
-        <h2 class="section-title" data-aos="fade-up">
-            Research Interests
-        </h2>
-
-        <div class="research-grid">
-
-            <div class="research-card"
-                 data-aos="fade-up"
-                 data-aos-delay="100">
-
-                <div class="research-icon">
-                    <i class="fas fa-person-running"></i>
-                </div>
-
-                <h3>Human-Centered Computer Vision</h3>
-
-                <p>
-                    Developing vision systems for understanding human motion,
-                    pose, anatomy, and interaction in healthcare, rehabilitation,
-                    robotics, and assistive technologies.
-                </p>
-
-            </div>
-
-
-            <div class="research-card"
-                 data-aos="fade-up"
-                 data-aos-delay="200">
-
-                <div class="research-icon">
-                    <i class="fas fa-cube"></i>
-                </div>
-
-                <h3>3D & 4D Perception</h3>
-
-                <p>
-                    Investigating stereo vision, 3D tracking, spatial perception,
-                    neural scene reconstruction, and temporal understanding
-                    of dynamic environments.
-                </p>
-
-            </div>
-
-
-            <div class="research-card"
-                 data-aos="fade-up"
-                 data-aos-delay="300">
-
-                <div class="research-icon">
-                    <i class="fas fa-network-wired"></i>
-                </div>
-
-                <h3>Multimodal & Vision-Language AI</h3>
-
-                <p>
-                    Exploring vision-language models, multimodal representation learning,
-                    open-vocabulary perception, and scene understanding for intelligent
-                    and embodied systems.
-                </p>
-
-            </div>
-
-
-            <div class="research-card"
-                 data-aos="fade-up"
-                 data-aos-delay="400">
-
-                <div class="research-icon">
-                    <i class="fas fa-heart-pulse"></i>
-                </div>
-
-                <h3>Biomedical AI & Medical Imaging</h3>
-
-                <p>
-                    Applying machine learning to medical imaging, rehabilitation,
-                    physiological signals, anatomical analysis, and personalized
-                    biomedical applications.
-                </p>
-
-            </div>
-
-
-            <div class="research-card"
-                 data-aos="fade-up"
-                 data-aos-delay="500">
-
-                <div class="research-icon">
-                    <i class="fas fa-arrows-to-circle"></i>
-                </div>
-
-                <h3>Human Motion & Biomechanics</h3>
-
-                <p>
-                    Combining biomechanical analysis, computer vision, and machine learning
-                    to quantify movement, estimate joint motion, and support rehabilitation
-                    and assistive technologies.
-                </p>
-
-            </div>
-
-
-            <div class="research-card"
-                 data-aos="fade-up"
-                 data-aos-delay="600">
-
-                <div class="research-icon">
-                    <i class="fas fa-microchip"></i>
-                </div>
-
-                <h3>Foundation Models & Trustworthy AI</h3>
-
-                <p>
-                    Studying foundation models and interpretable learning methods
-                    for building robust, transferable, and reliable intelligent
-                    perception systems.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     Projects Section
-========================== -->
-<section id="projects" class="section projects-section">
-
-    <div class="container">
-
-        <h2 class="section-title" data-aos="fade-up">
-            Selected Research & Engineering Projects
-        </h2>
-
-        <p class="section-subtitle" data-aos="fade-up">
-            A curated selection spanning human movement analysis, 3D perception,
-            multimodal AI, biomedical signals, and intelligent robotic systems.
-        </p>
-
-
-        <div class="projects-grid">
-
-
-            <!-- =========================
-                 Project 1
-            ========================== -->
-            <div class="project-card"
-                 data-aos="fade-up"
-                 data-aos-delay="100">
-
-                <div class="project-image">
-
-                    <img src="assets/images/project1human.png"
-                         alt="Human Pose Estimation for Rehabilitation">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-                        Human Pose Estimation for Rehabilitation
-                    </h3>
-
-                    <p>
-                        A real-time human-motion analysis framework combining
-                        YOLO pose estimation and MediaPipe to evaluate exercise
-                        quality, count repetitions, identify movement errors,
-                        and generate rehabilitation-oriented feedback.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>YOLO-Pose</span>
-                        <span>MediaPipe</span>
-                        <span>OpenCV</span>
-                        <span>Human Motion</span>
-                        <span>Biomechanics</span>
-                        <span>Healthcare AI</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/ZahraAlipour703/Human-Pose-Estimation-for-Rehab-Feedback"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-
-                    </div>
+                <div class="social-links">
+
+                    <a href="https://github.com/ZahraAlipour703"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       title="GitHub"
+                       aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/zahraalipour703"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       title="LinkedIn"
+                       aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://orcid.org/0009-0002-0477-759X"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       title="ORCID"
+                       aria-label="ORCID">
+                        <i class="fab fa-orcid"></i>
+                    </a>
+
+                    <a href="mailto:zahraalipour.ac@gmail.com"
+                       title="Email"
+                       aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
 
                 </div>
 
             </div>
 
 
-            <!-- =========================
-                 Project 2
-            ========================== -->
-            <div class="project-card"
-                 data-aos="fade-up"
-                 data-aos-delay="200">
+            <div class="hero-image" data-aos="fade-left">
 
-                <div class="project-image">
-
-                    <img src="https://opengraph.githubassets.com/1/ZahraAlipour703/OpenVLA-Scene"
-                         alt="OpenVLA-Scene vision-language scene understanding project"
-                         loading="lazy">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-                        OpenVLA-Scene: Vision-Language Scene Understanding
-                    </h3>
-
-                    <p>
-                        An open-vocabulary multimodal perception project exploring
-                        vision-language scene understanding for robotics and intelligent
-                        systems, connecting visual perception with semantic reasoning.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Vision-Language Models</span>
-                        <span>Multimodal AI</span>
-                        <span>Robotics</span>
-                        <span>Scene Understanding</span>
-                        <span>Open-Vocabulary</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/ZahraAlipour703/OpenVLA-Scene"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =========================
-                 Project 3
-            ========================== -->
-            <div class="project-card"
-                 data-aos="fade-up"
-                 data-aos-delay="300">
-
-                <div class="project-image">
-
-                    <img src="https://opengraph.githubassets.com/1/ZahraAlipour703/MedFM-Bench"
-                         alt="MedFM-Bench medical foundation model benchmarking project"
-                         loading="lazy">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-                        MedFM-Bench: Medical Foundation Model Benchmarking
-                    </h3>
-
-                    <p>
-                        A research-oriented benchmarking framework for evaluating
-                        medical foundation models and studying their practical
-                        behavior across biomedical AI tasks and experimental settings.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Medical AI</span>
-                        <span>Foundation Models</span>
-                        <span>Benchmarking</span>
-                        <span>Deep Learning</span>
-                        <span>Evaluation</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/ZahraAlipour703/MedFM-Bench"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =========================
-                 Project 4
-            ========================== -->
-            <div class="project-card"
-                 data-aos="fade-up"
-                 data-aos-delay="400">
-
-                <div class="project-image">
-
-                    <img src="assets/images/146.png"
-                         alt="LiteHand-YOLO efficient hand tracking"
-                         loading="lazy">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-                        LiteHand-YOLO: Efficient Hand Tracking
-                    </h3>
-
-                    <p>
-                        An attention-enhanced YOLOv8-based architecture designed
-                        for accurate and efficient real-time hand detection and
-                        tracking, with an emphasis on lightweight inference and
-                        edge deployment.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>YOLOv8</span>
-                        <span>Attention</span>
-                        <span>Hand Tracking</span>
-                        <span>PyTorch</span>
-                        <span>Edge AI</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/ZahraAlipour703/LiteHand-YOLO"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =========================
-                 Project 5
-            ========================== -->
-            <div class="project-card"
-                 data-aos="fade-up"
-                 data-aos-delay="500">
-
-                <div class="project-image">
-
-                    <img src="assets/images/Drawing%202025-01-28%2016.09.40.excalidraw.png"
-                         alt="Stereo camera calibration and 3D ArUco tracking"
-                         loading="lazy">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-                        Stereo Camera Calibration & 3D ArUco Tracking
-                    </h3>
-
-                    <p>
-                        A real-time stereo-vision pipeline using chessboard-based
-                        camera calibration and ArUco markers for spatial pose
-                        estimation, 3D tracking, and downstream motion analysis.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Stereo Vision</span>
-                        <span>3D Tracking</span>
-                        <span>Camera Calibration</span>
-                        <span>ArUco</span>
-                        <span>OpenCV</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/ZahraAlipour703/ArucoTackingIn3DSpace"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =========================
-                 Project 6
-            ========================== -->
-            <div class="project-card"
-                 data-aos="fade-up"
-                 data-aos-delay="600">
-
-                <div class="project-image">
-
-                    <img src="https://opengraph.githubassets.com/1/ZahraAlipour703/NinaProData"
-                         alt="EMG-based finger movement classification"
-                         loading="lazy">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-                        EMG-Based Finger Movement Classification
-                    </h3>
-
-                    <p>
-                        Time-delay neural network modeling of flexion and extension
-                        from EMG signals in the NinaPro dataset, with comparison
-                        against an LSTM baseline and analysis of movement-related
-                        signal patterns.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>EMG</span>
-                        <span>NinaPro</span>
-                        <span>TDNN</span>
-                        <span>LSTM</span>
-                        <span>Biosignal Processing</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/ZahraAlipour703/NinaProData"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =========================
-                 Project 7
-            ========================== -->
-            <div class="project-card"
-                 data-aos="fade-up"
-                 data-aos-delay="700">
-
-                <div class="project-image">
-
-                    <img src="https://opengraph.githubassets.com/1/ZahraAlipour703/computer-vision"
-                         alt="TinyNeRF neural 3D scene reconstruction"
-                         loading="lazy">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-                        TinyNeRF: Neural 3D Scene Reconstruction
-                    </h3>
-
-                    <p>
-                        An exploration of neural radiance field concepts for
-                        reconstructing 3D scenes from multi-view images and
-                        synthesizing novel viewpoints, providing a foundation
-                        for further work in neural 3D perception.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>NeRF</span>
-                        <span>3D Vision</span>
-                        <span>Neural Rendering</span>
-                        <span>PyTorch</span>
-                        <span>Scene Reconstruction</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/ZahraAlipour703/computer-vision"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =========================
-                 Project 8
-            ========================== -->
-            <div class="project-card"
-                 data-aos="fade-up"
-                 data-aos-delay="800">
-
-                <div class="project-image">
-
-                    <img src="https://opengraph.githubassets.com/1/ZahraAlipour703/YOLO-mediapipe"
-                         alt="YOLO and MediaPipe human tracking pipeline"
-                         loading="lazy">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-                        YOLO–MediaPipe Human Tracking Pipeline
-                    </h3>
-
-                    <p>
-                        A real-time computer-vision pipeline integrating object
-                        detection and landmark-based tracking for robust human
-                        motion analysis, with an emphasis on modular implementation,
-                        evaluation, and practical deployment.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>YOLO</span>
-                        <span>MediaPipe</span>
-                        <span>OpenCV</span>
-                        <span>Tracking</span>
-                        <span>Real-Time CV</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="https://github.com/ZahraAlipour703/YOLO-mediapipe"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-
-                    </div>
-
-                </div>
+                <img src="assets/images/profile.png"
+                     alt="Portrait of Zahra Alipour">
 
             </div>
 
         </div>
 
 
-        <div class="text-center" style="margin-top: 3rem;">
+        <div class="scroll-indicator">
 
-            <a href="https://github.com/ZahraAlipour703?tab=repositories"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn btn-primary">
-                <i class="fab fa-github"></i>
-                View All Projects on GitHub
+            <a href="#about"
+               aria-label="Scroll to About section">
+                <i class="fas fa-chevron-down"></i>
             </a>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =========================
-     Publications
-========================== -->
-<section id="publications" class="section publications-section">
+    <!-- =========================
+         About Section
+    ========================== -->
+    <section id="about" class="section about-section">
 
-    <div class="container">
+        <div class="container">
 
-        <h2 class="section-title" data-aos="fade-up">
-            Publications
-        </h2>
+            <h2 class="section-title" data-aos="fade-up">
+                About Me
+            </h2>
 
-        <div class="publications-list">
 
-            <div class="publication-item"
-                 data-aos="fade-up"
-                 data-aos-delay="100">
+            <div class="about-content">
 
-                <div class="pub-year">
-                    2025
+
+                <div class="about-text"
+                     data-aos="fade-up"
+                     data-aos-delay="100">
+
+                    <p>
+                        I am a
+                        <strong>Biomedical Engineer specialized in Biomechanics</strong>
+                        with a research trajectory toward
+                        <strong>Computer Vision, Machine Learning, and intelligent perception</strong>.
+                        My work focuses on building computational systems that perceive,
+                        quantify, and analyze human movement and real-world visual environments.
+                    </p>
+
+
+                    <p>
+                        My technical experience includes
+                        <strong>human pose estimation, hand tracking, stereo vision,
+                        3D tracking, biosignal processing, real-time computer vision,
+                        and robotics-oriented perception</strong>.
+                        I have worked with YOLO, MediaPipe, OpenCV, and deep-learning
+                        pipelines in rehabilitation, human-motion analysis, and
+                        human-robot interaction contexts.
+                    </p>
+
+
+                    <p>
+                        My current research interests center on
+                        <strong>multimodal 3D/4D perception, temporal understanding
+                        of human movement, vision-language models, foundation models,
+                        embodied AI, and biomedical AI</strong>.
+                        I am particularly interested in connecting visual perception,
+                        biomechanical understanding, and intelligent robotic systems.
+                    </p>
+
                 </div>
 
-                <div class="pub-content">
 
-                    <h3>
-                        LiteHand-YOLO: Efficient Attention-Enhanced YOLOv8n for Robust Hand Tracking
-                    </h3>
+                <div class="about-highlights"
+                     data-aos="fade-up"
+                     data-aos-delay="200">
 
-                    <p class="pub-authors">
-                        <strong>Zahra Alipour</strong>
-                    </p>
 
-                    <p class="pub-venue">
-                        <i class="fas fa-file-alt"></i>
-                        ICRoM 2025
-                    </p>
+                    <div class="highlight-card">
 
-                    <div class="pub-links">
+                        <i class="fas fa-graduation-cap"></i>
 
-                        <a href="https://github.com/ZahraAlipour703/LiteHand-YOLO"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fas fa-link"></i>
-                            Project
-                        </a>
+                        <h3>
+                            Education
+                        </h3>
+
+                        <p>
+                            B.Sc. in Biomedical Engineering<br>
+                            Qazvin Islamic Azad University<br>
+                            CGPA: 3.78 / 4.00
+                        </p>
+
+                    </div>
+
+
+                    <div class="highlight-card">
+
+                        <i class="fas fa-flask"></i>
+
+                        <h3>
+                            Research Focus
+                        </h3>
+
+                        <p>
+                            Computer Vision<br>
+                            Human Motion & 3D Perception<br>
+                            Multimodal AI
+                        </p>
+
+                    </div>
+
+
+                    <div class="highlight-card">
+
+                        <i class="fas fa-award"></i>
+
+                        <h3>
+                            Recognition
+                        </h3>
+
+                        <p>
+                            ICRoM 2025 Publication<br>
+                            Top-30 BME Admission Rank
+                        </p>
 
                     </div>
 
@@ -879,94 +314,153 @@
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =========================
-     Experience
-========================== -->
-<section id="experience" class="section experience-section">
+    <!-- =========================
+         Research Interests
+    ========================== -->
+    <section id="research"
+             class="section research-section">
 
-    <div class="container">
+        <div class="container">
 
-        <h2 class="section-title" data-aos="fade-up">
-            Experience
-        </h2>
+            <h2 class="section-title"
+                data-aos="fade-up">
+                Research Interests
+            </h2>
 
-        <div class="timeline">
+
+            <div class="research-grid">
 
 
-            <!-- Experience 1 -->
-            <div class="timeline-item"
-                 data-aos="fade-up"
-                 data-aos-delay="100">
+                <!-- Research 1 -->
+                <div class="research-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100">
 
-                <div class="timeline-marker"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-date">
-                        Dec 2024 – Jun 2026
-                    </span>
+                    <div class="research-icon">
+                        <i class="fas fa-person-running"></i>
+                    </div>
 
                     <h3>
-                        Computer Vision Research Engineer
+                        Human-Centered Computer Vision
                     </h3>
 
-                    <h4>
-                        AstraBionics
-                    </h4>
-
                     <p>
-                        Developed real-time computer-vision systems for
-                        human and robotic hand motion analysis, including:
-                    </p>
-
-                    <p>
-                        • YOLOv8 + MediaPipe pipelines for real-time hand tracking.<br>
-                        • Human-to-robot hand motion replication using pose estimation.<br>
-                        • Stereo-camera calibration and 3D ArUco tracking for spatial motion estimation.<br>
-                        • Human body pose estimation for exercise and rehabilitation analysis.
+                        Vision systems for understanding human pose, movement,
+                        anatomy, and interaction in healthcare, rehabilitation,
+                        robotics, and assistive technologies.
                     </p>
 
                 </div>
 
-            </div>
 
+                <!-- Research 2 -->
+                <div class="research-card"
+                     data-aos="fade-up"
+                     data-aos-delay="200">
 
-            <!-- Experience 2 -->
-            <div class="timeline-item"
-                 data-aos="fade-up"
-                 data-aos-delay="200">
-
-                <div class="timeline-marker"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-date">
-                        Jul 2024 – Dec 2024
-                    </span>
+                    <div class="research-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
 
                     <h3>
-                        Machine Learning Intern
+                        3D & 4D Perception
                     </h3>
 
-                    <h4>
-                        AstraBionics
-                    </h4>
-
                     <p>
-                        Worked on human and robotic finger-motion analysis,
-                        biosignal processing, and movement classification.
+                        Stereo vision, spatial tracking, multi-view geometry,
+                        3D reconstruction, and temporal understanding of
+                        dynamic environments.
                     </p>
 
+                </div>
+
+
+                <!-- Research 3 -->
+                <div class="research-card"
+                     data-aos="fade-up"
+                     data-aos-delay="300">
+
+                    <div class="research-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+
+                    <h3>
+                        Multimodal & Vision-Language AI
+                    </h3>
+
                     <p>
-                        • Computed MCP, PIP, and DIP joint angles for finger-motion analysis.<br>
-                        • Classified flexion and extension from NinaPro EMG data using a TDNN.<br>
-                        • Pre-processed and synchronized IMU and motion-tracking data.<br>
-                        • Supported integration of human-motion data with robotic finger tracking.
+                        Vision-language models, multimodal representation learning,
+                        open-vocabulary perception, and semantic scene understanding
+                        for intelligent systems.
+                    </p>
+
+                </div>
+
+
+                <!-- Research 4 -->
+                <div class="research-card"
+                     data-aos="fade-up"
+                     data-aos-delay="400">
+
+                    <div class="research-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+
+                    <h3>
+                        Biomedical AI & Medical Imaging
+                    </h3>
+
+                    <p>
+                        Machine learning for medical imaging, rehabilitation,
+                        physiological signals, and computational analysis
+                        of biomedical data.
+                    </p>
+
+                </div>
+
+
+                <!-- Research 5 -->
+                <div class="research-card"
+                     data-aos="fade-up"
+                     data-aos-delay="500">
+
+                    <div class="research-icon">
+                        <i class="fas fa-arrows-to-circle"></i>
+                    </div>
+
+                    <h3>
+                        Human Motion & Biomechanics
+                    </h3>
+
+                    <p>
+                        Combining biomechanical analysis, visual perception,
+                        and machine learning to quantify movement and support
+                        rehabilitation and assistive technologies.
+                    </p>
+
+                </div>
+
+
+                <!-- Research 6 -->
+                <div class="research-card"
+                     data-aos="fade-up"
+                     data-aos-delay="600">
+
+                    <div class="research-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+
+                    <h3>
+                        Foundation Models & Trustworthy AI
+                    </h3>
+
+                    <p>
+                        Foundation models, multimodal learning, model evaluation,
+                        and interpretable approaches for more robust and transferable
+                        intelligent perception.
                     </p>
 
                 </div>
@@ -975,169 +469,976 @@
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =========================
-     Contact
-========================== -->
-<section id="contact" class="section contact-section">
+    <!-- =========================
+         Projects Section
+    ========================== -->
+    <section id="projects"
+             class="section projects-section">
 
-    <div class="container">
+        <div class="container">
 
-        <h2 class="section-title" data-aos="fade-up">
-            Get In Touch
-        </h2>
-
-        <p class="section-subtitle"
-           data-aos="fade-up">
-
-            I am open to research opportunities, graduate study,
-            collaborations, and engineering positions in
-            Computer Vision, Biomedical AI, Multimodal Learning,
-            and Intelligent Perception.
-
-        </p>
+            <h2 class="section-title"
+                data-aos="fade-up">
+                Selected Research & Engineering Projects
+            </h2>
 
 
-        <div class="contact-grid">
-
-            <div class="contact-info"
-                 data-aos="fade-up"
-                 data-aos-delay="100">
-
-
-                <div class="contact-card">
-
-                    <i class="fas fa-envelope"></i>
-
-                    <h3>Email</h3>
-
-                    <p>
-                        <a href="mailto:zahraalipour.ac@gmail.com">
-                            zahraalipour.ac@gmail.com
-                        </a>
-                    </p>
-
-                </div>
-
-
-                <div class="contact-card">
-
-                    <i class="fas fa-phone"></i>
-
-                    <h3>Phone</h3>
-
-                    <p>
-                        +98 (919) 703-4891
-                    </p>
-
-                </div>
-
-
-                <div class="contact-card">
-
-                    <i class="fas fa-map-marker-alt"></i>
-
-                    <h3>Location</h3>
-
-                    <p>
-                        Karaj, Iran
-                    </p>
-
-                </div>
-
-
-                <div class="contact-card">
-
-                    <i class="fab fa-github"></i>
-
-                    <h3>GitHub</h3>
-
-                    <p>
-                        <a href="https://github.com/ZahraAlipour703"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            @ZahraAlipour703
-                        </a>
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     Footer
-========================== -->
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="footer-content">
-
-            <p>
-                &copy; 2026 Zahra Alipour. All rights reserved.
+            <p class="section-subtitle"
+               data-aos="fade-up">
+                Eight selected repositories from my work in human motion,
+                real-time computer vision, 3D perception, biomedical signals,
+                multimodal AI, and robotics.
             </p>
 
-            <p>
-                Computer Vision Engineer | AI Researcher
-            </p>
 
-            <div class="footer-links">
+            <div class="projects-grid">
 
-                <a href="https://github.com/ZahraAlipour703"
+
+                <!-- =================================
+                     PROJECT 1
+                ================================== -->
+                <div class="project-card"
+                     data-aos="fade-up"
+                     data-aos-delay="100">
+
+                    <div class="project-image">
+
+                        <img src="assets/images/project1human.png"
+                             alt="Human-Pose-Estimation-for-Rehab-Feedback"
+                             loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Human-Pose-Estimation-for-Rehab-Feedback
+                        </h3>
+
+                        <span class="project-repo-name">
+                            github.com/ZahraAlipour703/Human-Pose-Estimation-for-Rehab-Feedback
+                        </span>
+
+                        <p>
+                            A real-time rehabilitation-oriented computer-vision
+                            system for human pose estimation, movement analysis,
+                            repetition counting, and exercise feedback.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>YOLO-Pose</span>
+                            <span>MediaPipe</span>
+                            <span>OpenCV</span>
+                            <span>Human Motion</span>
+                            <span>Biomechanics</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/ZahraAlipour703/Human-Pose-Estimation-for-Rehab-Feedback"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <i class="fab fa-github"></i>
+                                View Repository
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     PROJECT 2
+                ================================== -->
+                <div class="project-card"
+                     data-aos="fade-up"
+                     data-aos-delay="200">
+
+                    <div class="project-image">
+
+                        <div class="project-placeholder"
+                             aria-hidden="true">
+
+                            <i class="fas fa-robot"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            OpenVLA-Scene
+                        </h3>
+
+                        <span class="project-repo-name">
+                            github.com/ZahraAlipour703/OpenVLA-Scene
+                        </span>
+
+                        <p>
+                            A project focused on
+                            <strong>open-vocabulary vision-language
+                            scene understanding for robotics</strong>,
+                            exploring multimodal visual perception and
+                            semantic understanding in embodied systems.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>Vision-Language</span>
+                            <span>Multimodal AI</span>
+                            <span>Scene Understanding</span>
+                            <span>Robotics</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/ZahraAlipour703/OpenVLA-Scene"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <i class="fab fa-github"></i>
+                                View Repository
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     PROJECT 3
+                ================================== -->
+                <div class="project-card"
+                     data-aos="fade-up"
+                     data-aos-delay="300">
+
+                    <div class="project-image">
+
+                        <div class="project-placeholder"
+                             aria-hidden="true">
+
+                            <i class="fas fa-hospital"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            MedFM-Bench
+                        </h3>
+
+                        <span class="project-repo-name">
+                            github.com/ZahraAlipour703/MedFM-Bench
+                        </span>
+
+                        <p>
+                            A research-oriented repository for studying
+                            and evaluating medical foundation models
+                            through structured experiments and
+                            benchmarking workflows.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>Medical AI</span>
+                            <span>Foundation Models</span>
+                            <span>Benchmarking</span>
+                            <span>Deep Learning</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/ZahraAlipour703/MedFM-Bench"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <i class="fab fa-github"></i>
+                                View Repository
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     PROJECT 4
+                ================================== -->
+                <div class="project-card"
+                     data-aos="fade-up"
+                     data-aos-delay="400">
+
+                    <div class="project-image">
+
+                        <img src="assets/images/146.png"
+                             alt="LiteHand-YOLO"
+                             loading="lazy">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            LiteHand-YOLO
+                        </h3>
+
+                        <span class="project-repo-name">
+                            github.com/ZahraAlipour703/LiteHand-YOLO
+                        </span>
+
+                        <p>
+                            An efficient YOLO-based hand detection and
+                            tracking project focused on real-time inference
+                            and practical deployment under computational
+                            constraints.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>YOLOv8</span>
+                            <span>Hand Tracking</span>
+                            <span>Attention</span>
+                            <span>PyTorch</span>
+                            <span>Edge AI</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/ZahraAlipour703/LiteHand-YOLO"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <i class="fab fa-github"></i>
+                                View Repository
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     PROJECT 5
+                ================================== -->
+                <div class="project-card"
+                     data-aos="fade-up"
+                     data-aos-delay="500">
+
+                    <div class="project-image">
+
+                        <div class="project-placeholder"
+                             aria-hidden="true">
+
+                            <i class="fas fa-cube"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            ArucoTackingIn3DSpace
+                        </h3>
+
+                        <span class="project-repo-name">
+                            github.com/ZahraAlipour703/ArucoTackingIn3DSpace
+                        </span>
+
+                        <p>
+                            A stereo-vision project combining camera
+                            calibration and ArUco-based tracking for
+                            real-time spatial pose estimation and
+                            3D motion analysis.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>Stereo Vision</span>
+                            <span>3D Tracking</span>
+                            <span>ArUco</span>
+                            <span>OpenCV</span>
+                            <span>Camera Calibration</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/ZahraAlipour703/ArucoTackingIn3DSpace"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <i class="fab fa-github"></i>
+                                View Repository
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     PROJECT 6
+                ================================== -->
+                <div class="project-card"
+                     data-aos="fade-up"
+                     data-aos-delay="600">
+
+                    <div class="project-image">
+
+                        <div class="project-placeholder"
+                             aria-hidden="true">
+
+                            <i class="fas fa-wave-square"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            NinaProData
+                        </h3>
+
+                        <span class="project-repo-name">
+                            github.com/ZahraAlipour703/NinaProData
+                        </span>
+
+                        <p>
+                            A biomedical signal-processing and machine-learning
+                            project using NinaPro EMG data to study finger
+                            movement classification with temporal neural models.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>EMG</span>
+                            <span>NinaPro</span>
+                            <span>TDNN</span>
+                            <span>LSTM</span>
+                            <span>Biosignal Processing</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/ZahraAlipour703/NinaProData"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <i class="fab fa-github"></i>
+                                View Repository
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     PROJECT 7
+                ================================== -->
+                <div class="project-card"
+                     data-aos="fade-up"
+                     data-aos-delay="700">
+
+                    <div class="project-image">
+
+                        <div class="project-placeholder"
+                             aria-hidden="true">
+
+                            <i class="fas fa-camera"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            Stereocalibation
+                        </h3>
+
+                        <span class="project-repo-name">
+                            github.com/ZahraAlipour703/Stereocalibation
+                        </span>
+
+                        <p>
+                            A dedicated stereo-camera calibration repository
+                            supporting multi-view geometry and 3D computer-vision
+                            workflows.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>Stereo Calibration</span>
+                            <span>Computer Vision</span>
+                            <span>Camera Geometry</span>
+                            <span>OpenCV</span>
+                            <span>3D Vision</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/ZahraAlipour703/Stereocalibation"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <i class="fab fa-github"></i>
+                                View Repository
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     PROJECT 8
+                ================================== -->
+                <div class="project-card"
+                     data-aos="fade-up"
+                     data-aos-delay="800">
+
+                    <div class="project-image">
+
+                        <div class="project-placeholder"
+                             aria-hidden="true">
+
+                            <i class="fas fa-person-walking"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>
+                            YOLO-mediapipe
+                        </h3>
+
+                        <span class="project-repo-name">
+                            github.com/ZahraAlipour703/YOLO-mediapipe
+                        </span>
+
+                        <p>
+                            A real-time computer-vision pipeline integrating
+                            YOLO detection with MediaPipe tracking for human
+                            and hand motion analysis.
+                        </p>
+
+
+                        <div class="project-tags">
+
+                            <span>YOLO</span>
+                            <span>MediaPipe</span>
+                            <span>OpenCV</span>
+                            <span>Tracking</span>
+                            <span>Real-Time Vision</span>
+
+                        </div>
+
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/ZahraAlipour703/YOLO-mediapipe"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <i class="fab fa-github"></i>
+                                View Repository
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- All repositories -->
+            <div class="text-center"
+                 style="margin-top: 3rem;">
+
+                <a href="https://github.com/ZahraAlipour703?tab=repositories"
                    target="_blank"
                    rel="noopener noreferrer"
-                   aria-label="GitHub">
+                   class="btn btn-primary">
+
                     <i class="fab fa-github"></i>
-                </a>
+                    Explore All GitHub Repositories
 
-                <a href="https://www.linkedin.com/in/zahraalipourr"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:zahraalipour.ac@gmail.com"
-                   aria-label="Email">
-                    <i class="fas fa-envelope"></i>
                 </a>
 
             </div>
 
         </div>
-
-    </div>
-
-</footer>
+    </section>
 
 
-<!-- =========================
-     Back to Top
-========================== -->
-<button id="backToTop"
-        class="back-to-top"
-        aria-label="Back to top">
+    <!-- =========================
+         Publications
+    ========================== -->
+    <section id="publications"
+             class="section publications-section">
 
-    <i class="fas fa-arrow-up"></i>
+        <div class="container">
 
-</button>
+            <h2 class="section-title"
+                data-aos="fade-up">
+
+                Publications
+
+            </h2>
 
 
-<!-- =========================
-     Scripts
-========================== -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="assets/js/script.js"></script>
+            <div class="publications-list">
 
-</body> </html>
+
+                <div class="publication-item"
+                     data-aos="fade-up"
+                     data-aos-delay="100">
+
+                    <div class="pub-year">
+                        2025
+                    </div>
+
+
+                    <div class="pub-content">
+
+                        <h3>
+                            LiteHand-YOLO: Efficient Attention-Enhanced YOLOv8n for Robust Hand Tracking
+                        </h3>
+
+
+                        <p class="pub-authors">
+                            <strong>Zahra Alipour</strong>
+                        </p>
+
+
+                        <p class="pub-venue">
+                            <i class="fas fa-file-alt"></i>
+                            ICRoM 2025
+                        </p>
+
+
+                        <p class="publication-status">
+                            Research publication on an attention-enhanced
+                            YOLOv8n approach for hand tracking.
+                        </p>
+
+
+                        <div class="pub-links">
+
+                            <a href="https://github.com/ZahraAlipour703/LiteHand-YOLO"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <i class="fas fa-code"></i>
+                                Project Repository
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Experience
+    ========================== -->
+    <section id="experience"
+             class="section experience-section">
+
+        <div class="container">
+
+            <h2 class="section-title"
+                data-aos="fade-up">
+
+                Experience
+
+            </h2>
+
+
+            <div class="timeline">
+
+
+                <!-- Experience 1 -->
+                <div class="timeline-item"
+                     data-aos="fade-up"
+                     data-aos-delay="100">
+
+                    <div class="timeline-marker"></div>
+
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            Dec 2024 – Jun 2026
+                        </span>
+
+
+                        <h3>
+                            Computer Vision Research Engineer
+                        </h3>
+
+
+                        <h4>
+                            AstraBionics
+                        </h4>
+
+
+                        <p>
+                            Developed and integrated real-time computer-vision
+                            components for human and robotic hand-motion analysis.
+                        </p>
+
+
+                        <p>
+                            • Developed YOLOv8 + MediaPipe pipelines for real-time hand tracking.<br>
+                            • Implemented human-to-robot hand-motion replication using pose estimation.<br>
+                            • Developed stereo-camera calibration and 3D ArUco tracking workflows.<br>
+                            • Applied body-pose estimation to exercise and rehabilitation-oriented movement analysis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Experience 2 -->
+                <div class="timeline-item"
+                     data-aos="fade-up"
+                     data-aos-delay="200">
+
+                    <div class="timeline-marker"></div>
+
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            Jul 2024 – Dec 2024
+                        </span>
+
+
+                        <h3>
+                            Machine Learning Intern
+                        </h3>
+
+
+                        <h4>
+                            AstraBionics
+                        </h4>
+
+
+                        <p>
+                            Worked on human and robotic finger-motion analysis,
+                            biomedical signal processing, and movement classification.
+                        </p>
+
+
+                        <p>
+                            • Computed MCP, PIP, and DIP joint angles for finger-motion analysis.<br>
+                            • Classified flexion and extension movements using NinaPro EMG data and a TDNN.<br>
+                            • Pre-processed and synchronized IMU and motion-tracking data.<br>
+                            • Supported integration of human-motion data with robotic finger tracking.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Contact
+    ========================== -->
+    <section id="contact"
+             class="section contact-section">
+
+        <div class="container">
+
+            <h2 class="section-title"
+                data-aos="fade-up">
+
+                Get In Touch
+
+            </h2>
+
+
+            <p class="section-subtitle"
+               data-aos="fade-up">
+
+                I am open to research opportunities, graduate study,
+                collaborations, and engineering positions in Computer Vision,
+                Biomedical AI, Multimodal Learning, and Intelligent Perception.
+
+            </p>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-info"
+                     data-aos="fade-up"
+                     data-aos-delay="100">
+
+
+                    <!-- Email -->
+                    <div class="contact-card">
+
+                        <i class="fas fa-envelope"></i>
+
+                        <h3>
+                            Email
+                        </h3>
+
+                        <p>
+                            <a href="mailto:zahraalipour.ac@gmail.com">
+                                zahraalipour.ac@gmail.com
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="contact-card">
+
+                        <i class="fas fa-phone"></i>
+
+                        <h3>
+                            Phone
+                        </h3>
+
+                        <p>
+                            +98 (919) 703-4891
+                        </p>
+
+                    </div>
+
+
+                    <!-- Location -->
+                    <div class="contact-card">
+
+                        <i class="fas fa-map-marker-alt"></i>
+
+                        <h3>
+                            Location
+                        </h3>
+
+                        <p>
+                            Karaj, Iran
+                        </p>
+
+                    </div>
+
+
+                    <!-- GitHub -->
+                    <div class="contact-card">
+
+                        <i class="fab fa-github"></i>
+
+                        <h3>
+                            GitHub
+                        </h3>
+
+                        <p>
+                            <a href="https://github.com/ZahraAlipour703"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                @ZahraAlipour703
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <!-- LinkedIn -->
+                    <div class="contact-card">
+
+                        <i class="fab fa-linkedin"></i>
+
+                        <h3>
+                            LinkedIn
+                        </h3>
+
+                        <p>
+                            <a href="https://www.linkedin.com/in/zahraalipour703"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                linkedin.com/in/zahraalipour703
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         Footer
+    ========================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <p>
+                    &copy; 2026 Zahra Alipour. All rights reserved.
+                </p>
+
+
+                <p>
+                    Computer Vision Engineer | AI Researcher
+                </p>
+
+
+                <div class="footer-links">
+
+                    <a href="https://github.com/ZahraAlipour703"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/zahraalipour703"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+
+                    <a href="https://orcid.org/0009-0002-0477-759X"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="ORCID">
+
+                        <i class="fab fa-orcid"></i>
+
+                    </a>
+
+
+                    <a href="mailto:zahraalipour.ac@gmail.com"
+                       aria-label="Email">
+
+                        <i class="fas fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         Back to Top
+    ========================== -->
+    <button id="backToTop"
+            class="back-to-top"
+            aria-label="Back to top">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </button>
+
+
+    <!-- =========================
+         Scripts
+    ========================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
