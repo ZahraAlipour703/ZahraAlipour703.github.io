@@ -1,0 +1,16 @@
+# Ignore Python virtual environments
+rehab/
+venv/
+.venv/
+ENV/
+env/
+
+# Ignore compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+logs/
+*.log

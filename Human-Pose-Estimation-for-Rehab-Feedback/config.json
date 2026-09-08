@@ -1,0 +1,53 @@
+{
+  "shoulder_flexion": {
+    "side": "both",
+    "target_angle_up": 160,
+    "target_angle_down": 40,
+    "tolerance_deg": 15,
+    "hold_time_sec": 1.5,
+    "smoothing_window": 5,
+    "min_moving_angle": 8,
+    "max_elbow_flexion_deg": 20,
+    "max_torso_tilt_deg": 12
+  },
+  "arm_raise_and_carry": {
+    "mode": "combined",
+    "side": "both",
+    "target_angle_up": 160,
+    "target_angle_down": 40,
+    "tolerance_deg": 12,
+    "hold_time_sec": 1.5,
+    "smoothing_window": 5,
+    "min_moving_angle": 8,
+    "max_elbow_flexion_deg": 20,
+    "max_torso_tilt_deg": 12,
+    "carry_duration_sec": 20,
+    "carry_min_ok_fraction": 0.9
+  },
+  "shoulder_abduction": {
+    "side": "both",
+    "target_angle_up": 160,
+    "target_angle_down": 20,
+    "tolerance_deg": 18,
+    "hold_time_sec": 1.5,
+    "smoothing_window": 7,
+    "min_moving_angle": 8,
+    "max_elbow_flexion_deg": 20,
+    "max_torso_tilt_deg": 12
+  },
+  "mini_squat": {
+    "side": "left",
+    "down_knee_angle_deg": 60,
+    "up_knee_angle_deg": 170,
+    "tolerance_deg": 8,
+    "smoothing_window": 5,
+    "max_torso_tilt_deg": 18,
+    "heel_lift_thresh_deg": 6
+  },
+  "wall_calf_stretch": {
+    "side": "left",
+    "tolerance_deg": 8,
+    "heel_lift_thresh_deg": 6
+  }
+
+}
