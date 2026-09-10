@@ -896,3 +896,40 @@ body {
     }
 }
 
+/* Project Placeholder Images */
+
+.placeholder-image {
+
+    height: 220px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    background:
+    linear-gradient(
+        135deg,
+        #071426,
+        #102d52
+    );
+
+    color:#7dd3fc;
+
+}
+
+
+.placeholder-image i {
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
